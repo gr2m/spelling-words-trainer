@@ -492,10 +492,10 @@ export default function Page() {
   async function speakWithIntro(word: string) {
     await cloudSpeakOnce("The next word is:")
     await new Promise((r) => setTimeout(r, 350))
-    await cloudSpeakOnce(word, false)
+    await cloudSpeakOnce(`${word}.`, false)
   }
   async function speakWord(word: string) {
-    await cloudSpeakOnce(word)
+    await cloudSpeakOnce(`${word}.`)
   }
 
   async function speakEncouragementCorrect() {
