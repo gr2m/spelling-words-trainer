@@ -30,7 +30,7 @@ export async function POST(req: Request) {
 
     const requestBody = {
       text,
-      model_id: "eleven_multilingual_v2",
+      model_id: "eleven_english_sts_v2",
       voice_settings: {
         stability: 0.35,
         similarity_boost: 0.9,
