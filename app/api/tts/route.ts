@@ -25,14 +25,15 @@ export async function POST(req: Request) {
       return new Response("Missing or invalid text", { status: 400 })
     }
 
-    const vid = voiceId || "21m00Tcm4TlvDq8ikWAM" // Rachel (friendly US English)
+    const vid = voiceId || "31Il5zoNpJznlwCVD8UT" // Nolan the Narrator
     console.log("Using voice ID:", vid)
 
     const requestBody = {
       text,
-      model_id: "eleven_english_sts_v2",
+      model_id: "eleven_flash_v2",
       voice_settings: {
-        stability: 0.35,
+        speed: 0.8,
+        stability: 0.85,
         similarity_boost: 0.9,
         style: 0.4,
         use_speaker_boost: true,

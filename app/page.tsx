@@ -429,7 +429,7 @@ export default function Page() {
       const res = await fetch("/api/tts", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ text, voiceId: "21m00Tcm4TlvDq8ikWAM" }), // Rachel
+        body: JSON.stringify({ text, voiceId: "31Il5zoNpJznlwCVD8UT" }), // Nolan the Narrator
       })
 
       console.log("TTS Response status:", res.status)
